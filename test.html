@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Background Video</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="/menu.js" async></script>
+	</head>
+	<body>
+		<section class="showcase">
+			<header>
+				<h3 class="logo">Dota 2</h3>
+				<div class="toggle"></div>
+			</header>
+
+			<video src="video/background.mp4" muted loop autoplay></video>
+
+			<div class="text">
+				<h2>Join the</h2>
+				<h3>Battle of the Ancients</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae
+					nobis ipsa accusamus repellendus nesciunt inventore officiis quasi
+					obcaecati exercitationem? Officiis similique dignissimos voluptate
+					molestias id, commodi esse iusto maxime.
+				</p>
+				<a href="#">see what's new</a>
+			</div>
+		</section>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#">Heroes</a></li>
+				<li><a href="#">Items</a></li>
+				<li><a href="#">News</a></li>
+			</ul>
+		</div>
+		<script>
+			const menuToggle = document.querySelector(".toggle");
+			const showcase = document.querySelector(".showcase");
+
+			menuToggle.addEventListener("click", () => {
+				menuToggle.classList.toggle("active");
+				showcase.classList.toggle("active");
+			});
+		</script>
+	</body>
+</html>

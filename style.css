@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Original+Surfer&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, sans-serif;
+}
+.showcase {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+	z-index: 2;
+}
+.showcase.active {
+	right: 300px;
+}
+.showcase header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	padding: 40px 100px;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+.logo {
+	font-family: Original Surfer;
+	text-transform: uppercase;
+	font-size: 60px;
+	cursor: pointer;
+}
+.toggle {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: url("/TEST1/image/menu.png");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	cursor: pointer;
+}
+.toggle.active {
+	background: url("/TEST1/image/close.jpeg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu ul {
+	position: relative;
+	list-style: none;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+}
+
+.menu ul li a:hover {
+	color: blue;
+}
+
+.showcase video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.4;
+}
+
+.text {
+	position: relative;
+	z-index: 10;
+	justify-content: center;
+	text-align: center;
+}
+
+.text h2 {
+	font-size: 100px;
+	text-align: center;
+	font-family: Original Surfer;
+	opacity: 0.7;
+	margin-right: 0;
+	padding: 0;
+}
+.text h3 {
+	font-size: 80px;
+	text-align: center;
+	opacity: 0.8;
+	margin-right: 0;
+}
+
+.text p {
+	font-size: 2em;
+	font-family: Original Surfer;
+	opacity: 0.8;
+	margin: 20px 0;
+	font-weight: 300px;
+	text-indent: 2em;
+}
+.text a {
+	display: inline-block;
+	background-color: white;
+	font-size: 25px;
+	margin-top: 40px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.2s;
+}
+
+.text a:hover {
+	letter-spacing: 4px;
+	box-shadow: 2px 2px 4px white;
+}
